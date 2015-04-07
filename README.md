@@ -21,9 +21,10 @@ field, and is instead stored with the object.
     var User = db.model('User', UserSchema);
     
     var user = new User({username: 'Prince'});
+    console.log(user.createdAt === user.updatedAt); // true
+    
     user.save(function (err) {
-      console.log(user.createdAt); // Should be approximately now
-      console.log(user.createdAt === user.updatedAt); // true
+      console.log(user.updatedAt); // Should be approximately now
 
       // Wait 1 second and then update the user
       setTimeout( function () {

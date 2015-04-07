@@ -1,12 +1,20 @@
 {
     "name": "mongoose-simpletimestamps",
-    "description":  "Simple timestamps for mongoose",
-    "version":  "1.0.0",
+    "description": "Simple timestamps for mongoose",
+    "version": "1.0.1",
     "main": "mongoose-simpletimestamps.js",
-    "author": "Andy Burke",
+    "author": "Andy Burke <aburke@bitflood.org>",
     "dependencies": {
         "mongoose": ">= 1.0.16"
     },
-    "keywords": [ "mongoose", "mongo", "mongodb", "timestamps" ],
-    "licenses": [ { "type": "The MIT License", "url": "http://www.opensource.org/licenses/mit-license.php" } ]
+    "keywords": [
+        "mongoose",
+        "mongo",
+        "mongodb",
+        "timestamps"
+    ],
+    "licenses": [ {
+        "type": "The MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+    } ]
 }
