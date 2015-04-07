@@ -5,16 +5,14 @@ exports.SimpleTimestamps = function( schema ) {
         createdAt: Date,
         updatedAt: Date
     } );
-    
-	schema.pre( 'init', function( next ) {
-		if ( !this.createdAt ) {
-			this.createdAt = this.updatedAt = new Date();
-		}
-		next();
-    } );
 
-	schema.pre( 'save', function( next ) {
-		this.updatedAt = new Date();
+    schema.pre( 'save', function( next ) {
+        if ( !this.createdAt ) {
+            this.createdAt = this.updatedAt = new Date();
+        }
+        else {
+            this.updatedAt = new Date();
+        }
         next();
     } );
 };

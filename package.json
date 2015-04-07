@@ -1,7 +1,7 @@
 {
     "name": "mongoose-simpletimestamps",
     "description": "Simple timestamps for mongoose",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "mongoose-simpletimestamps.js",
     "author": "Andy Burke <aburke@bitflood.org>",
     "dependencies": {
